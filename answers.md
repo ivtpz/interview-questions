@@ -258,6 +258,31 @@
 * **Why:**
 * **References:** []()
 
+> * Is JavaScript statically or dynamically typed? Is JavaScript strongly typed or loosely typed? What do those terms mean? 
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+ 
+> * Practically speaking, what's a "declarative" language?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+ 
+> * Is JavaScript a functional language? What does it mean for a language to be "functional"?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+ 
+> * What's an IIFE in JS? When would you use it?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+ 
+
 ## Opinion based
 
 >Why would you use JS?
@@ -289,6 +314,20 @@
 * **Example:**
 * **Why:**
 * **References:** []()
+
+## Data Structures Questions
+> * What is the average and worst-case time complexity of access, search, and insertion for common data structures? For each answer, briefly explain why.
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> * What's a "tuple"? What's a "triple"? What's the difference between a tuple and a set?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
 
 ## Front End Questions
 * If you have 5 different stylesheets how would you best integrate them into the site?
@@ -680,10 +719,6 @@
 
 ## Testing Questions
 
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
 
 > What are some advantages/disadvantages to testing your code?
 * **Definition:**
@@ -710,12 +745,19 @@
 * **References:** []()
 
 > What tools would you use to find a performance bug in your code?
-
-## Back End Questions
 * **Definition:**
 * **Example:**
 * **Why:**
 * **References:** []()
+
+> Present a quick overview of TDD.
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+
+## Back End Questions
 
 > Do your best to describe the process from the time you type in a website's URL to it finishing loading on your screen.
 * **Definition:**
@@ -896,3 +938,30 @@
 * **Example:**
 * **Why:**
 * **References:** []()
+
+> * Describe the benefits of Redis.
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> * Describe the benefits of Elasticsearch
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+ 
+## Git Questions
+> * Practically speaking, how does git rebase function compared to git merge?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> * When using git, what exactly do people mean when they talk about "the SHA-1"? 
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+

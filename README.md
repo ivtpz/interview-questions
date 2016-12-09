@@ -43,7 +43,10 @@
 * Explain the same-origin policy with regards to JavaScript.
 * Why is it called a Ternary expression what does the word "Ternary" indicate?
 * What is "use strict";? what are the advantages and disadvantages to using it?
-
+* Is JavaScript statically or dynamically typed? Is JavaScript strongly typed or loosely typed? What do those terms mean? 
+* Practically speaking, what's a "declarative" language?
+* Is JavaScript a functional language? What does it mean for a language to be "functional"?
+* What's an IIFE in JS? When would you use it? 
 
 ## Opinion based
 * Why would you use JS?
@@ -51,6 +54,10 @@
 * Why should we consider using React?
 * If you were building Twitter what tech stack might you use?
 * Why do you want to work at X company?  
+
+## Data Structures Questions
+* What is the average and worst-case time complexity of access, search, and insertion for common data structures? For each answer, briefly explain why.
+* What's a "tuple"? What's a "triple"? What's the difference between a tuple and a set?
 
 ## Front End Questions
 * If you have 5 different stylesheets how would you best integrate them into the site?
@@ -120,8 +127,10 @@
 * What is the difference between a unit test and a functional/integration test?
 * What is the purpose of a code style linting tool?
 * What tools would you use to find a performance bug in your code?
+* Present a quick overview of TDD.
 
 ## Back End Questions
+
 * Do your best to describe the process from the time you type in a website's URL to it finishing loading on your screen.
 * What are the differences between Long-Polling Websockets and Server-Sent Events?
 * What are HTTP methods? List all HTTP methods that you know and explain them.
@@ -152,3 +161,10 @@
 * Describe the key advantages of HTTP/2 as compared with HTTP 1.1.
 * What is a “MIME type” what does it consist of and what is it used for? Provide an example.
 * What are the main differences between a document database and a SQL database? Which would you consider "more efficient"?
+* Give a brief analogy explaining how computer memory works to a beginning programmer.
+* Describe the benefits of Redis.
+* Describe the benefits of Elasticsearch
+ 
+## Git Questions
+* Practically speaking, how does git rebase function compared to git merge?
+* When using git, what exactly do people mean when they talk about "the SHA-1"? 
