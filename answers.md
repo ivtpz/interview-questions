@@ -407,13 +407,13 @@
 > Describe the difference between `<script>` `<script async>` and `<script defer>`.
 
 * **Definition:**
-..* Script - embed executable JavaScript, fetched & executed immediately - next line is not parsed until this one completes
-..* Script Async - Continue parsing while this loads, only works with src, executes at first opportunity after it’s available, before page loads - order of async execution may change from order on page
-..* Script defer - execute after the document is parsed, but before it loads. Defer tags will execute in order
+  * Script - embed executable JavaScript, fetched & executed immediately - next line is not parsed until this one completes
+  * Script Async - Continue parsing while this loads, only works with src, executes at first opportunity after it’s available, before page loads - order of async execution may change from order on page
+  * Script defer - execute after the document is parsed, but before it loads. Defer tags will execute in order
 * **Example:**
-..* If the script is modular and does not rely on any scripts then use async.
-..* If the script relies upon or is relied upon by another script then use defer.
-..* If the script is small and is relied upon by an async script then use an inline script with no attributes placed above the async scripts.
+  * If the script is modular and does not rely on any scripts then use async.
+  * If the script relies upon or is relied upon by another script then use defer.
+  * If the script is small and is relied upon by an async script then use an inline script with no attributes placed above the async scripts.
 * **Why:** Async helps the page load faster (by not pausing HTML parsing to download), defer does the same, but guarantees order of execution
 * **References:** [Growing with the web](http://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html)
 
