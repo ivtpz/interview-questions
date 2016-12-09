@@ -194,7 +194,7 @@
 * **References:** [C SharpCorner](http://www.c-sharpcorner.com/uploadfile/cd7c2e/difference-between-local-storage-session-storage-ans-cookie/)  
 
 
-> Describe the difference between <script> <script async> and <script defer>.
+> Describe the difference between `<script>` `<script async>` and `<script defer>`.
 
 * **Definition:**
 ..* Script - embed executable JavaScript, fetched & executed immediately - next line is not parsed until this one completes
@@ -207,7 +207,9 @@
 * **Why:** Async helps the page load faster (by not pausing HTML parsing to download), defer does the same, but guarantees order of execution
 * **References:** [Growing with the web](http://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html)
 
-> Why is it generally a good idea to position CSS <link>s between <head></head> and JS <script>s just before </body>? Do you know any exceptions?
+
+
+> Why is it generally a good idea to position CSS `<link>`s between `<head>``</head>` and JS `<script>`s just before `</body>`? Do you know any exceptions?
 * **Definition:**
 * **Example:**
 * **Why:**
@@ -351,7 +353,12 @@
 * **Why:**
 * **References:** []()
 
-> What does > { box-sizing: border-box; } do? What are its advantages?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()> What does
+
+> { box-sizing: border-box; } do? What are its advantages?
 * **Definition:**
 * **Example:**
 * **Why:**
@@ -411,169 +418,13 @@
 * **Why:**
 * **References:** []()
 
-> Explain event delegation
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> Explain how this works in JavaScript
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> Explain how prototypal inheritance works
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> What do you think of AMD vs CommonJS?
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> Explain why the following doesn't work as an IIFE: function foo(){ }();. What needs to be changed to properly make it an IIFE?
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> What's the difference between a variable that is: null undefined or undeclared?
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> What is a closure and how/why would you use one?
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> What's a typical use case for anonymous functions?
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> How do you organize your code? (module pattern classical inheritance?)
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> What's the difference between host objects and native objects?
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> Difference between: function Person(){} var person = Person() and var person = new Person()?
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> What's the difference between .call and .apply?
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> Explain Function.prototype.bind.
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> When would you use document.write()?
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> What's the difference between feature detection feature inference and using the UA string?
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> Explain Ajax in as much detail as possible.
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> What are the advantages and disadvantages of using Ajax?
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> Explain how JSONP works (and how it's not really Ajax).
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> Have you ever used JavaScript templating?
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> Explain "hoisting".
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> Describe event bubbling.
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> What's the difference between an "attribute" and a "property"?
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> Why is extending built-in JavaScript objects not a good idea?
+> What's the difference between an "attribute" and a "property" in HTML?
 * **Definition:**
 * **Example:**
 * **Why:**
 * **References:** []()
 
 > Difference between document load event and document DOMContentLoaded event?
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> What is the difference between == and ===?
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> Explain the same-origin policy with regards to JavaScript.
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> Why is it called a Ternary expression what does the word "Ternary" indicate?
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> What is "use strict";? what are the advantages and disadvantages to using it?
 * **Definition:**
 * **Example:**
 * **Why:**
@@ -597,67 +448,28 @@
 * **Why:**
 * **References:** []()
 
-> What is the extent of your experience with Promises and/or their polyfills?
+> What are some ways you may improve your website's scrolling performance?
 * **Definition:**
 * **Example:**
 * **Why:**
 * **References:** []()
 
-> What are the pros and cons of using Promises instead of callbacks?
+> In the MVC design pattern what's M stands for?
 * **Definition:**
 * **Example:**
 * **Why:**
 * **References:** []()
 
-> What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?
+> Explain the difference between layout painting and compositing.
 * **Definition:**
 * **Example:**
 * **Why:**
 * **References:** []()
 
-> What tools and techniques do you use debugging JavaScript code?
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
+> Traditionally why has it been better to serve site assets from multiple domains?
 
-> What language constructions do you use for iterating over object properties and array items?
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
+## Testing Questions
 
-> Explain the difference between mutable and immutable objects.
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> What is an example of an immutable object in JavaScript?
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> What are the pros and cons of immutability?
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> Explain the difference between synchronous and asynchronous functions.
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> What is event loop? What is the difference between call stack and task queue?
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> Explain the differences on the usage of foo between function foo() {} and var foo = function() {}
 * **Definition:**
 * **Example:**
 * **Why:**
@@ -688,24 +500,8 @@
 * **References:** []()
 
 > What tools would you use to find a performance bug in your code?
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
 
-> What are some ways you may improve your website's scrolling performance?
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> Explain the difference between layout painting and compositing.
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> Traditionally why has it been better to serve site assets from multiple domains?
+## Back End Questions
 * **Definition:**
 * **Example:**
 * **Why:**
@@ -724,12 +520,6 @@
 * **References:** []()
 
 > What are HTTP methods? List all HTTP methods that you know and explain them.
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
-
-> In the MVC design pattern what's M stands for?
 * **Definition:**
 * **Example:**
 * **Why:**
@@ -892,3 +682,7 @@
 * **References:** []()
 
 > What are the main differences between a document database and a SQL database? Which would you consider "more efficient"?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
