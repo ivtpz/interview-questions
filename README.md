@@ -68,8 +68,8 @@
 * How do you serve a page with content in multiple languages
 * What are data- attributes good for?
 * Describe the difference between a cookie sessionStorage and localStorage.
-* Describe the difference between <script> <script async> and <script defer>.
-* Why is it generally a good idea to position CSS <link>s between <head></head> and JS <script>s just before </body>? Do you know any exceptions?
+* Describe the difference between `<script>` `<script async>` and `<script defer>`.
+* Why is it generally a good idea to position CSS `<link>`s between `<head>``</head>` and JS `<script>`s just before `</body>`? Do you know any exceptions?
 * What is progressive rendering?
 * Have you used different HTML templating languages before?
 * What is the difference between classes and IDs in CSS?
