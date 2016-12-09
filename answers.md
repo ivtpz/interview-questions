@@ -48,6 +48,216 @@
 * **Why:**
 * **References:** []()
 
+> Explain event delegation
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> Explain how this works in JavaScript
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> Explain how prototypal inheritance works
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> What do you think of AMD vs CommonJS?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> Explain why the following doesn't work as an IIFE: function foo(){ }();. What needs to be changed to properly make it an IIFE?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> What's a typical use case for anonymous functions?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> How do you organize your code? (module pattern classical inheritance?)
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> What's the difference between host objects and native objects?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> Difference between: function Person(){} var person = Person() and var person = new Person()?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> What's the difference between .call and .apply?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> Explain Function.prototype.bind.
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> When would you use document.write()?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> What's the difference between feature detection feature inference and using the UA string?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> Explain Ajax in as much detail as possible.
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> What are the advantages and disadvantages of using Ajax?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> Explain how JSONP works (and how it's not really Ajax).
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> Have you ever used JavaScript templating?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> Explain "hoisting".
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> Describe event bubbling.
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> What is the extent of your experience with Promises and/or their polyfills?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> What are the pros and cons of using Promises instead of callbacks?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> What tools and techniques do you use debugging JavaScript code?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> What language constructions do you use for iterating over object properties and array items?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> Explain the difference between mutable and immutable objects.
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> What is an example of an immutable object in JavaScript?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> What are the pros and cons of immutability?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> Explain the difference between synchronous and asynchronous functions.
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> What is event loop? What is the difference between call stack and task queue?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> Explain the differences on the usage of foo between function foo() {} and var foo = function() {}
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> Why is extending built-in JavaScript objects not a good idea?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> What is the difference between == and ===?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> Explain the same-origin policy with regards to JavaScript.
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> Why is it called a Ternary expression what does the word "Ternary" indicate?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> What is "use strict";? what are the advantages and disadvantages to using it?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
 ## Opinion based
 
 >Why would you use JS?
