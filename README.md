@@ -47,6 +47,7 @@
 * Practically speaking, what's a "declarative" language?
 * Is JavaScript a functional language? What does it mean for a language to be "functional"?
 * What's an IIFE in JS? When would you use it? 
+* What is JSONP
 
 ## Opinion based
 * Why would you use JS?
@@ -119,6 +120,10 @@
 * In the MVC design pattern what's M stands for?
 * Explain the difference between layout painting and compositing.
 * Traditionally why has it been better to serve site assets from multiple domains?
+* What is the difference between display: none and visibility: hidden?
+* What are some ways to make a page SEO friendly
+* What is the difference between document load and document ready?
+* Describe the MVC pattern
 
 ## Testing Questions
 
@@ -164,6 +169,8 @@
 * Give a brief analogy explaining how computer memory works to a beginning programmer.
 * Describe the benefits of Redis.
 * Describe the benefits of Elasticsearch
+* How do you allow CORS requests?
+
  
 ## Git Questions
 * Practically speaking, how does git rebase function compared to git merge?

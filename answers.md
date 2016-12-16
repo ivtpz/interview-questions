@@ -25,16 +25,16 @@
 > How do you check if an object is an array?
 
 * **Definition:** The type of an array is 'object' in JS, so you need to use `Array.isArray()``
-* **Example:**
-* **Why:**
-* **References:** []()
+* **Example:** Use Array.isArray(), or Object.prototype.toString.call( someVar ) === '[object Array]' for older browsers
+* **Why:** Arrays type is object, so to differentiate you need to use Array.isArray
+* **References:** [StackOverflow](http://stackoverflow.com/questions/22289727/difference-between-using-array-isarray-and-instanceof-array)
 
 > What is the difference between classical inheritance and prototypal inheritance?
 
-* **Definition:** In classical inheritance, every time you make an instance of an class, that instance gets a copy of the class’s methods, whereas in prototypal inheritance, failed lookups for an object’s methods fall up the prototype chain, so you don’t have a copy in memory for every method, and you save space in memory
-* **Example:**
-* **Why:**
-* **References:** []()
+* **Definition:** JavaScript uses protoypal inheritance, either through the portotypal or constructor pattern. Languages like C++, Java, C# and Python support Classical Inheritance. In Classical inheritance is classes are immutable, objects can only be created by instatiating classes, and classes inherit from other classes. Prototypal inheritance is dynamic, meaning you can add methods to the prototypes on the fly, and objects inherit from other objects through the protoype chain.
+* **Example:** JavaScript uses prototypal inheritance with the constructor pattern (using `new` keyword) and the prototypal pattern (`Object.create()`). Traditional languages use classical inheritance
+* **Why:** 
+* **References:** [Why Prototypal Inheritance Matters](http://aaditmshah.github.io/why-prototypal-inheritance-matters/)
 
 > What is function hoisting in JavaScript?
 * **Definition:**
@@ -286,6 +286,12 @@ function bar() {
 * **References:** []()
  
 > * What's an IIFE in JS? When would you use it?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> What is JSONP
 * **Definition:**
 * **Example:**
 * **Why:**
@@ -614,9 +620,9 @@ function bar() {
 * **Definition:**
 * **Example:**
 * **Why:**
-* **References:** []()> What does
+* **References:** []()
 
-> { box-sizing: border-box; } do? What are its advantages?
+> What does { box-sizing: border-box; } do? What are its advantages?
 * **Definition:**
 * **Example:**
 * **Why:**
@@ -725,6 +731,36 @@ function bar() {
 * **References:** []()
 
 > Traditionally why has it been better to serve site assets from multiple domains?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> What is the difference between display: none and visibility: hidden?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> What are some ways to make a page SEO friendly
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> What is the difference between document load and document ready?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+> Describe the MVC pattern
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+
 
 ## Testing Questions
 
@@ -948,13 +984,20 @@ function bar() {
 * **Why:**
 * **References:** []()
 
-> * Describe the benefits of Redis.
+> Describe the benefits of Redis.
 * **Definition:**
 * **Example:**
 * **Why:**
 * **References:** []()
 
-> * Describe the benefits of Elasticsearch
+> Describe the benefits of Elasticsearch
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+
+> How do you allow CORS requests?
 * **Definition:**
 * **Example:**
 * **Why:**
