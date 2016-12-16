@@ -151,10 +151,19 @@
 * **References:** []()
 
 > Explain "hoisting".
-* **Definition:**
+
+* **Definition:** 'Hoisting' is when function declarations and variable declarations are always moved invisibly to the top of their containing scope by the JavaScript interpreter. For variable declarations (and function expressions - `var func = function() {}`), note that the assignment portion is not hoisted, only the name.
 * **Example:**
-* **Why:**
-* **References:** []()
+```javascript
+var foo = function() {
+  alert("This function isn't hoisted, only 'foo'.");
+}
+function bar() {
+  alert("This function is!");
+}
+```
+* **Why:** Hoisting is actually the result of the JavaScript interpreter implementation. Code interpretation is done in two passes. First pass processes variable and function declarations. Second pass is where code execution happens. You can use it to forward reference a function, though - as in use a function before it's declared.
+* **References:** [Adequately Good](http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html) [Stack Overflow](http://stackoverflow.com/questions/15005098/why-does-javascript-hoist-variables)
 
 > Describe event bubbling.
 * **Definition:**
