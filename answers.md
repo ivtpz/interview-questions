@@ -155,15 +155,17 @@
 * **Definition:** 'Hoisting' is when function declarations and variable declarations are always moved invisibly to the top of their containing scope by the JavaScript interpreter. For variable declarations (and function expressions - `var func = function() {}`), note that the assignment portion is not hoisted, only the name.
 * **Example:**
 ```javascript
+foo(); //foo is not defined
+bar();
 var foo = function() {
-  alert("This function isn't hoisted, only 'foo'.");
+  alert("This function won't be hoisted.");
 }
 function bar() {
   alert("This function is!");
 }
 ```
 * **Why:** Hoisting is actually the result of the JavaScript interpreter implementation. Code interpretation is done in two passes. First pass processes variable and function declarations. Second pass is where code execution happens. You can use it to forward reference a function, though - as in use a function before it's declared.
-* **References:** [Adequately Good](http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html) [Stack Overflow](http://stackoverflow.com/questions/15005098/why-does-javascript-hoist-variables)
+* **References:** [Adequately Good](http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html), [StackOverflow](http://stackoverflow.com/questions/15005098/why-does-javascript-hoist-variables)
 
 > Describe event bubbling.
 * **Definition:**
@@ -232,10 +234,24 @@ function bar() {
 * **References:** []()
 
 > Explain the differences on the usage of foo between function foo() {} and var foo = function() {}
-* **Definition:**
+* **Definition:** So this is the difference between function declarations and function expressions. Function declarations define a named function variable without requiring variable assignment and are standalone constructs. Function expressions, on the other hand, don't start out with `function` and can be named or anonymous. On the difference of usage, function declarations have the benefit of being hoisted.
 * **Example:**
-* **Why:**
-* **References:** []()
+```javascript
+//function declaration
+function bar() {
+    return 3;
+}
+//anonymous function expression
+var a = function() {
+    return 3;
+}
+//self invoking function expression
+(function sayHello() {
+    alert("hello!");
+})();
+```
+* **Why:** Normally function declarations and function expressions can be used interchangeably, but there are times when function expressions result in easier to understand code without the need for a temporary function name. Function expressions can also be used as closures, as arguments to other functions, and as IIFEs (Immediately Invoked Function Expressions).
+* **References:** [JavaScript, JavaScript...](https://javascriptweblog.wordpress.com/2010/07/06/function-declarations-vs-function-expressions/), [SitePoint](https://www.sitepoint.com/function-expressions-vs-declarations/)
 
 > Why is extending built-in JavaScript objects not a good idea?
 * **Definition:**
