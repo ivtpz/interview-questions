@@ -38,8 +38,10 @@
 
 
 > What is the event loop in JavaScript, and how does it handle synchronous and asynchronous functions?
+
 * **Definition:** The event loop can be conceptualized as a stack to handle function calls, a 'hold box' to handle asynchronous functions, and a queue, to hold async functions that have completed their assignment. The JS engine first clears the function call stack. As it does, if there is an async function, it will go into the 'hold box' until it completes, at which point it moves to the queue. Then if there is anything in the queue that has finished its async task, it will be moved into the stack and execute. Events from the queue only move onto the stack when the stack is clear. 
 * **Example:** If you use a setTimeout of 0 on a function nested inside another function, it will not complete until the containing function has finished executing.
+
 ```javascript
 function outer() {
   console.log('first')
