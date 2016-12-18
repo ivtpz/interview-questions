@@ -36,17 +36,25 @@
 * **Why:** 
 * **References:** [Why Prototypal Inheritance Matters](http://aaditmshah.github.io/why-prototypal-inheritance-matters/)
 
-> What is function hoisting in JavaScript?
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
 
 > What is the event loop in JavaScript, and how does it handle synchronous and asynchronous functions?
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
+* **Definition:** The event loop can be conceptualized as a stack to handle function calls, a 'hold box' to handle asynchronous functions, and a queue, to hold async functions that have completed their assignment. The JS engine first clears the function call stack. As it does, if there is an async function, it will go into the 'hold box' until it completes, at which point it moves to the queue. Then if there is anything in the queue that has finished its async task, it will be moved into the stack and execute. Events from the queue only move onto the stack when the stack is clear. 
+* **Example:** If you use a setTimeout of 0 on a function nested inside another function, it will not complete until the containing function has finished executing.
+```javascript
+function outer() {
+  console.log('first')
+  setTimeout(() => console.log('second'), 0)
+  last()
+}
+console.log('done')
+
+function last() {
+  console.log('third')
+}
+// Will log 'first', 'third', 'done', 'second'
+```
+* **Why:** Javascript is single threaded, and it is important to understand what happens with async functions, and also realize that if you have a lot of async functions firing repeatedly, you will fill up the queue, which, when it executes, can block the stack and slow down your program. Also setTimeouts do not guarantee an exact time until the function executes, just the minimum wait before it will execute.
+* **References:** [Mozilla](https://developer.mozilla.org/en/docs/Web/JavaScript/EventLoop)
 
 > Explain event delegation
 * **Definition:**
