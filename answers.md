@@ -59,10 +59,19 @@ function last() {
 * **References:** [Mozilla](https://developer.mozilla.org/en/docs/Web/JavaScript/EventLoop)
 
 > Explain event delegation
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
+* **Definition:** Event delegation allows you to add listeners for events to parents in the DOM, instead of having to add them to each child node. Events bubble up, and you can access which child was actually clicked through the target property of the event.
+* **Example:** 
+```javascript
+// Get the element, add a click listener...
+document.getElementById("parent-list").addEventListener("click", function(e) {
+  if(e.target && e.target.nodeName == "LI") {
+    // List item found!  Output the ID!
+    console.log("List item ", e.target.id.replace("post-", ""), " was clicked!");
+  }
+});
+```
+* **Why:** This allows you to add less click or event handlers, and is much simplier to use with dynamically generated lists that require listeners. It is also useful for implementing highlighting in a list or table. You can put a listener on the parent, and highlight whichever child was clicked.
+* **References:** [SitePoint](https://www.sitepoint.com/javascript-event-delegation-is-easier-than-you-think/), [David Walsh Blog](https://davidwalsh.name/event-delegate)
 
 > Explain how this works in JavaScript
 * **Definition:**
