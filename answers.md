@@ -59,6 +59,7 @@ function last() {
 * **References:** [Mozilla](https://developer.mozilla.org/en/docs/Web/JavaScript/EventLoop)
 
 > Explain event delegation
+
 * **Definition:** Event delegation allows you to add listeners for events to parents in the DOM, instead of having to add them to each child node. Events bubble up, and you can access which child was actually clicked through the target property of the event.
 * **Example:** 
 ```javascript
