@@ -123,6 +123,7 @@
 * What are some ways to make a page SEO friendly
 * What is the difference between document load and document ready?
 * Describe the MVC pattern
+* Explain the differences between React and Angular.
 
 ## Testing Questions
 

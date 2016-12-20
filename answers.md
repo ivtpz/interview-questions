@@ -796,6 +796,11 @@ var a = function() {
 * **Why:**
 * **References:** []()
 
+> Explain the differences between React and Angular.
+
+* **Definition:** React interacts with a virtual DOM, which it diffs and compares with the real DOM to render only changes, while Angular is tightly coupled with the DOM - it watches for changes in data through dirty checking, and directly updates the DOM accordingly. Angular injects data with two way data binding via scopes. React has one way databinding through props, and relies on state to propogate changes through the components in the app. Angular is a full framework, while React is a library for managing view through composable components. React uses JSX, so your HTML and JS live in the same file.
+* **References:** [terropa](http://teropa.info/blog/2015/03/02/change-and-its-detection-in-javascript-frameworks.html), [Quora](https://www.quora.com/What-are-the-differences-between-Angular-js-and-React-js)
+
 
 
 ## Testing Questions
