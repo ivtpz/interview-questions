@@ -254,6 +254,7 @@ function bar() {
 * **References:** []()
 
 > Explain the differences on the usage of foo between function foo() {} and var foo = function() {}
+ 
 * **Definition:** So this is the difference between function declarations and function expressions. Function declarations define a named function variable without requiring variable assignment and are standalone constructs. Function expressions, on the other hand, don't start out with `function` and can be named or anonymous. On the difference of usage, function declarations have the benefit of being hoisted.
 * **Example:**
 ```javascript
