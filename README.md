@@ -171,7 +171,12 @@
 * Describe the benefits of Elasticsearch
 * How do you allow CORS requests?
 
+## General CS Questions
+* What is a design pattern? Can you describe one?
+* What is a programming paradigm? Can you describe one?
+
  
 ## Git Questions
 * Practically speaking, how does git rebase function compared to git merge?
 * When using git, what exactly do people mean when they talk about "the SHA-1"? 
+* What is your prefered Git workflow for a group project?

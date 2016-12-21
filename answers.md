@@ -798,7 +798,7 @@ var a = function() {
 
 > Explain the differences between React and Angular.
 
-* **Definition:** React interacts with a virtual DOM, which it diffs and compares with the real DOM to render only changes, while Angular is tightly coupled with the DOM - it watches for changes in data through dirty checking, and directly updates the DOM accordingly. Angular injects data with two way data binding via scopes. React has one way databinding through props, and relies on state to propogate changes through the components in the app. Angular is a full framework, while React is a library for managing view through composable components. React uses JSX, so your HTML and JS live in the same file.
+* **Definition:** React interacts with a virtual DOM, which it diffs by comparing it against the real DOM and re-renders only changed components, while Angular is tightly coupled with the DOM - it watches for changes in data through dirty checking, and directly updates the DOM accordingly. Angular injects data with two way data binding via scopes. React has one way databinding through props, and relies on state to propogate changes through the components in the app. Angular is a full framework, while React is a library for managing view through composable components. React uses JSX, so your HTML and JS live in the same file.
 * **References:** [terropa](http://teropa.info/blog/2015/03/02/change-and-its-detection-in-javascript-frameworks.html), [Quora](https://www.quora.com/What-are-the-differences-between-Angular-js-and-React-js)
 
 
@@ -1044,6 +1044,45 @@ var a = function() {
 * **Why:**
 * **References:** []()
 
+## General CS Questions
+
+> What is a design pattern? Can you describe one?
+ 
+* **Definition:** A design pattern defines a standard approach to handle a common problem in computer science
+* **Example:** There are three basic categories of design patterns: Behavioral, structural and creation patterns
+  1. **Creational Design Patterns:** Provide instatiation mechanisms for object creation
+    * *Factory:* It rolls the creation of multiple classes into a single function, like a factory that can make multiple products. By providing the right context to the factory method, it will return the desired object. The class of the returned object comes from the actual subclass that created it, not from the factory itself.
+    *  *Builder:* 
+    *  *Object Pool:* 
+    *  *Prototype:* 
+    *  *Singleton:* 
+  2. **Structural Design Patterns:** Deal with relationships between entities, making it easier for those entities to work together
+    * *Decorator:* Adds new or additional behavior to an individual object during run-time (post-compiling), as needed. The decorator pattern offers more flexibility over inheriting from a prototype when you have objects that have base methods and properties in common, but then each have some subset of a larger set of additional methods and properties. Rather than building subclasses for each one of those possible combinations, you can use decorators to add the needed methods or functionality.
+    * *Adapter:* 
+    * *Bridge:* 
+    * *Facade:*
+    * *Composite:* 
+    * *Proxy:* 
+    * *Private Class Data:* 
+    * *Flyweight:* 
+  3. **Behavioral Design Patterns:** Used in communications between entities, and make that communication easier and more flexible
+    * *Asynchronous:* 
+    * *Observer:* 
+    * *State:* An Object's behavior changes when its internal state changes. ex. DVD remote control - when in moviePlayingState, pressing the play button pauses the movie, when in moviePausedState, pressing the play button plays the movie
+    * *Strategy:* 
+    * *Chain of Responsibility:* A series of receivers or objects attempt to handle and resolve a request, or else they pass it to the next object in the chain. ex. Middleware in Express is a variant, or Promises using .catch() where if one attempt fails, a new object picks it up
+    * *Command:* 
+    * *Iterator:* 
+    * *Interpreter:* 
+    * *Mediator:* 
+* **Why:** These are well-thought out solutions to common programming problems, and provide a solid foundation for developing programming languages and general problem solving
+* **References:** [tutsplus](https://code.tutsplus.com/articles/a-beginners-guide-to-design-patterns--net-12752), [Source Making](https://sourcemaking.com/design_patterns)
+
+> What is a programming paradigm? Can you describe one?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
  
 ## Git Questions
 > * Practically speaking, how does git rebase function compared to git merge?
@@ -1058,3 +1097,8 @@ var a = function() {
 * **Why:**
 * **References:** []()
 
+> What is your prefered Git workflow for a group project?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
