@@ -1053,10 +1053,10 @@ var a = function() {
 * **Example:** There are three basic categories of design patterns: Behavioral, structural and creation patterns
   1. **Creational Design Patterns:** Provide instatiation mechanisms for object creation
     * *Factory:* It rolls the creation of multiple classes into a single function, like a factory that can make multiple products. By providing the right context to the factory method, it will return the desired object. The class of the returned object comes from the actual subclass that created it, not from the factory itself.
-    *  *Builder:* 
-    *  *Object Pool:* 
-    *  *Prototype:* 
-    *  *Singleton:* 
+    * *Builder:* Creates complex objects by using simple objects, and building the final object step by step. This allows for parsing a complex object to create different representations (ie. converting RTF files to ASCII, TeX, or text widget all with one builder or building a fast food meal from an order). It is useful when there is a common input, and many possible output representations. 
+    * *Abstract Factory:* Interface for creating families of related or dependent objects without specifying concrete classes. Heirarchy is based on a matrix of products and platforms. (ie. A factory that can create an application to work on a specific platform)
+    * *Prototype:* Base class maintains a dictionary of all prototype information. Clones of the prototype are made to create objects. While the factory method does creation through inheritance, the prototype method does creation through delegation. Cloning is cheap, so this method is useful when there is little variation in initialization parameters, allowing you to avoid expensive creation from scratch like in the factory method.
+    * *Singleton:* For creating one and only one instance of an object. It uses lazy initialization (creation on first use). State objects are often Singletons.
   2. **Structural Design Patterns:** Deal with relationships between entities, making it easier for those entities to work together
     * *Decorator:* Adds new or additional behavior to an individual object during run-time (post-compiling), as needed. The decorator pattern offers more flexibility over inheriting from a prototype when you have objects that have base methods and properties in common, but then each have some subset of a larger set of additional methods and properties. Rather than building subclasses for each one of those possible combinations, you can use decorators to add the needed methods or functionality.
     * *Adapter:* 
