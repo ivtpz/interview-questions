@@ -662,21 +662,19 @@ var a = function() {
 * **References:** []()
 
 > Explain your understanding of the box model and how you would tell the browser in CSS to render your layout in different box models.
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
 
-* **Definition:**
-* **Example:**
+* **Definition:** The standard box model is margin-border-padding-content, where the width and height of a box only include the content. The padding, border, and margin are added on outside of the width. You can use the box-sizing property in CSS to render a different box model.
+* **Example:** [Example image](http://www.planetoftunes.com/website-design/css/media/boxmodel.gif)
 * **Why:**
-* **References:** []()
+* **References:** [w3 schools](http://www.w3schools.com/css/css_boxmodel.asp), [Quora](https://www.quora.com/What-is-your-understanding-of-the-box-model-How-would-you-tell-the-browser-in-CSS-to-render-your-layout-in-different-box-models)
+
 
 > What does { box-sizing: border-box; } do? What are its advantages?
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
+
+* **Definition:** The width and height properties include content, border and padding, but not margin
+* **Example:** [w3 Schools](http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_box-sizing2)
+* **Why:** This allows you to add padding and borders without changing the total width and height of the element
+* **References:** [w3 Schools](http://www.w3schools.com/cssref/css3_pr_box-sizing.asp)
 
 > List as many values for the display property that you can remember.
 * **Definition:**
@@ -787,10 +785,11 @@ var a = function() {
 * **References:** []()
 
 > What is the difference between display: none and visibility: hidden?
-* **Definition:**
+
+* **Definition:** Display: none means the tag does not appear on the page, and there is no space allocated for it between other tags. Visibility: hidden means the tag is not visible, but the space it would occupy is still reserved on the page.
 * **Example:**
-* **Why:**
-* **References:** []()
+* **Why:** You can still interact with the elements through the DOM.
+* **References:** [Stack Overflow](http://stackoverflow.com/questions/133051/what-is-the-difference-between-visibilityhidden-and-displaynone)
 
 > What are some ways to make a page SEO friendly
 * **Definition:**
