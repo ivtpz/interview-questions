@@ -88,7 +88,7 @@ var person = {
 person.talk();
 // Logs 'Bazzinga'
 ```
-Typically the object on which a method is called is the context. You can override this behavior using bind, call, or apply. They allow you to specify a different context by passing it as the first argument to bind / call / apply. In the global context, `this` refers to the Window object (unless you are in "use strict mode" - in that case it will be undefined). When passing a method that uses `this` internally as a callback function, the method can loose it's `this` binding at call-time (eg. inside a setTimeout). In these cases, you need to either bind the `this` value when you pass it as a callback, or wrap it in an arrow function, since these set `this` bindings lexically, rather than at call-time.
+* Typically the object on which a method is called is the context. You can override this behavior using bind, call, or apply. They allow you to specify a different context by passing it as the first argument to bind / call / apply. In the global context, `this` refers to the Window object (unless you are in "use strict mode" - in that case it will be undefined). When passing a method that uses `this` internally as a callback function, the method can loose it's `this` binding at call-time (eg. inside a setTimeout). In these cases, you need to either bind the `this` value when you pass it as a callback, or wrap it in an arrow function, since these set `this` bindings lexically, rather than at call-time.
 * **Why:** It's important to be aware of maintaining the correct binding for `this` when passing methods to higher order functions, such as setTimeout, map, or reduce.
 * **References:** [Mozilla](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/this)
 
