@@ -398,9 +398,9 @@ var a = function() {
 * **Definition:**
 * **Example:**
 * **Why:**
-* **References:** []()  https://www.impressivewebs.com/best-way-add-css-web-page/
-  http://ryowheatley.blogspot.com/2016/12/master-vs-multiple-stylesheets-short.html
-]
+* **References:** [ryowheatley](http://ryowheatley.blogspot.com/2016/12/master-vs-multiple-stylesheets-short.html)  [impressiveWebs](https://www.impressivewebs.com/best-way-add-css-web-page/
+  http://ryowheatley.blogspot.com/2016/12/master-vs-multiple-stylesheets-short.html)
+
 
 > Can you describe the difference between progressive enhancement and graceful degradation?
 * **Definition:**
@@ -507,7 +507,7 @@ var a = function() {
 * **References:** [C SharpCorner](http://www.c-sharpcorner.com/uploadfile/cd7c2e/difference-between-local-storage-session-storage-ans-cookie/)  
 
 
-> Describe the difference between `<script>` `<script async>` and `<script defer>`.
+> Describe the difference between `<script>` `<script async>` and `<script defer>`. How can you leverage these to reduce page load times?
 
 * **Definition:**
   * Script - embed executable JavaScript, fetched & executed immediately - next line is not parsed until this one completes
@@ -522,11 +522,12 @@ var a = function() {
 
 
 
-> Why is it generally a good idea to position CSS `<link>`s between `<head>``</head>` and JS `<script>`s just before `</body>`? Do you know any exceptions?
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
+> Why is it generally a good idea to position CSS `<link>`s between `<head>``</head>` and JS `<script>`s just before `</body>` or use `async` or `defer`? Do you know any exceptions?
+
+* **Definition:** Things needed to render the page should be loaded in the head, resources that manipulate the page can be loaded at the end of the body, or can be asynchronously loaded while the HTML parser continues on
+* **Example:** CSS and external libraries should be loaded in the head, while your JS files can be loaded after the HTML body. One exception is that if your JS code depends on a library (like JQuery), you need to make sure the library loads before your scripts. To do this place the library in the head and the script at the end of the body, or (even better solution) put an `async` tag on the script that needs JQuery.
+* **Why:** You can reduce load times by positioning loading resources that are not necessary to render the HTML after rendering. The HTML parser is blocking, and will wait for external resources to be loaded before it continues.
+* **References:** [Stack Overflow](http://stackoverflow.com/questions/436411/where-is-the-best-place-to-put-script-tags-in-html-markup)
 
 > What is progressive rendering?
 * **Definition:**
