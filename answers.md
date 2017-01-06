@@ -33,13 +33,13 @@
 
 * **Definition:** JavaScript uses protoypal inheritance, either through the portotypal or constructor pattern. Languages like C++, Java, C# and Python support Classical Inheritance. In Classical inheritance is classes are immutable, objects can only be created by instatiating classes, and classes inherit from other classes. Prototypal inheritance is dynamic, meaning you can add methods to the prototypes on the fly, and objects inherit from other objects through the protoype chain.
 * **Example:** JavaScript uses prototypal inheritance with the constructor pattern (using `new` keyword) and the prototypal pattern (`Object.create()`). Traditional languages use classical inheritance
-* **Why:** 
+* **Why:**
 * **References:** [Why Prototypal Inheritance Matters](http://aaditmshah.github.io/why-prototypal-inheritance-matters/)
 
 
 > What is the event loop in JavaScript, and how does it handle synchronous and asynchronous functions?
 
-* **Definition:** The event loop can be conceptualized as a stack to handle function calls, a 'hold box' to handle asynchronous functions, and a queue, to hold async functions that have completed their assignment. The JS engine first clears the function call stack. As it does, if there is an async function, it will go into the 'hold box' until it completes, at which point it moves to the queue. Then if there is anything in the queue that has finished its async task, it will be moved into the stack and execute. Events from the queue only move onto the stack when the stack is clear. 
+* **Definition:** The event loop can be conceptualized as a stack to handle function calls, a 'hold box' to handle asynchronous functions, and a queue, to hold async functions that have completed their assignment. The JS engine first clears the function call stack. As it does, if there is an async function, it will go into the 'hold box' until it completes, at which point it moves to the queue. Then if there is anything in the queue that has finished its async task, it will be moved into the stack and execute. Events from the queue only move onto the stack when the stack is clear.
 * **Example:** If you use a setTimeout of 0 on a function nested inside another function, it will not complete until the containing function has finished executing.
 
 ```javascript
@@ -61,7 +61,7 @@ function last() {
 > Explain event delegation
 
 * **Definition:** Event delegation allows you to add listeners for events to parents in the DOM, instead of having to add them to each child node. Events bubble up, and you can access which child was actually clicked through the target property of the event.
-* **Example:** 
+* **Example:**
 ```javascript
 // Get the element, add a click listener...
 document.getElementById("parent-list").addEventListener("click", function(e) {
@@ -75,10 +75,22 @@ document.getElementById("parent-list").addEventListener("click", function(e) {
 * **References:** [SitePoint](https://www.sitepoint.com/javascript-event-delegation-is-easier-than-you-think/), [David Walsh Blog](https://davidwalsh.name/event-delegate)
 
 > Explain how this works in JavaScript
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
+
+* **Definition:** `this` typically refers to the context that a function is called in. Usually you can use the left of the dot rule to determine how `this` is bound.
+* **Example:** An example of the left of the dot rule:
+```javascript
+var person = {
+  quote: 'Bazzinga',
+  talk: function() {
+    console.log(this.quote)
+  }
+}
+person.talk();
+// Logs 'Bazzinga'
+```
+Typically the object on which a method is called is the context. You can override this behavior using bind, call, or apply. They allow you to specify a different context by passing it as the first argument to bind / call / apply. In the global context, `this` refers to the Window object (unless you are in "use strict mode" - in that case it will be undefined). When passing a method that uses `this` internally as a callback function, the method can loose it's `this` binding at call-time (eg. inside a setTimeout). In these cases, you need to either bind the `this` value when you pass it as a callback, or wrap it in an arrow function, since these set `this` bindings lexically, rather than at call-time.
+* **Why:** It's important to be aware of maintaining the correct binding for `this` when passing methods to higher order functions, such as setTimeout, map, or reduce.
+* **References:** [Mozilla](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/this)
 
 > Explain how prototypal inheritance works
 * **Definition:**
@@ -254,7 +266,7 @@ function bar() {
 * **References:** []()
 
 > Explain the differences on the usage of foo between function foo() {} and var foo = function() {}
- 
+
 * **Definition:** So this is the difference between function declarations and function expressions. Function declarations define a named function variable without requiring variable assignment and are standalone constructs. Function expressions, on the other hand, don't start out with `function` and can be named or anonymous. On the difference of usage, function declarations have the benefit of being hoisted.
 * **Example:**
 ```javascript
@@ -304,24 +316,24 @@ var a = function() {
 * **Why:**
 * **References:** []()
 
-> * Is JavaScript statically or dynamically typed? Is JavaScript strongly typed or loosely typed? What do those terms mean? 
+> * Is JavaScript statically or dynamically typed? Is JavaScript strongly typed or loosely typed? What do those terms mean?
 * **Definition:**
 * **Example:**
 * **Why:**
 * **References:** []()
- 
+
 > * Practically speaking, what's a "declarative" language?
 * **Definition:**
 * **Example:**
 * **Why:**
 * **References:** []()
- 
+
 > * Is JavaScript a functional language? What does it mean for a language to be "functional"?
 * **Definition:**
 * **Example:**
 * **Why:**
 * **References:** []()
- 
+
 > * What's an IIFE in JS? When would you use it?
 * **Definition:**
 * **Example:**
@@ -333,7 +345,7 @@ var a = function() {
 * **Example:**
 * **Why:**
 * **References:** []()
- 
+
 
 ## Opinion based
 
@@ -1048,34 +1060,34 @@ var a = function() {
 ## General CS Questions
 
 > What is a design pattern? Can you describe one?
- 
+
 * **Definition:** A design pattern defines a standard approach to handle a common problem in computer science
 * **Example:** There are three basic categories of design patterns: Behavioral, structural and creation patterns
   1. **Creational Design Patterns:** Provide instatiation mechanisms for object creation
     * *Factory:* It rolls the creation of multiple classes into a single function, like a factory that can make multiple products. By providing the right context to the factory method, it will return the desired object. The class of the returned object comes from the actual subclass that created it, not from the factory itself.
-    * *Builder:* Creates complex objects by using simple objects, and building the final object step by step. This allows for parsing a complex object to create different representations (ie. converting RTF files to ASCII, TeX, or text widget all with one builder or building a fast food meal from an order). It is useful when there is a common input, and many possible output representations. 
+    * *Builder:* Creates complex objects by using simple objects, and building the final object step by step. This allows for parsing a complex object to create different representations (ie. converting RTF files to ASCII, TeX, or text widget all with one builder or building a fast food meal from an order). It is useful when there is a common input, and many possible output representations.
     * *Abstract Factory:* Interface for creating families of related or dependent objects without specifying concrete classes. Heirarchy is based on a matrix of products and platforms. (ie. A factory that can create an application to work on a specific platform)
     * *Prototype:* Base class maintains a dictionary of all prototype information. Clones of the prototype are made to create objects. While the factory method does creation through inheritance, the prototype method does creation through delegation. Cloning is cheap, so this method is useful when there is little variation in initialization parameters, allowing you to avoid expensive creation from scratch like in the factory method.
     * *Singleton:* For creating one and only one instance of an object. It uses lazy initialization (creation on first use). State objects are often Singletons.
   2. **Structural Design Patterns:** Deal with relationships between entities, making it easier for those entities to work together
     * *Decorator:* Adds new or additional behavior to an individual object during run-time (post-compiling), as needed. The decorator pattern offers more flexibility over inheriting from a prototype when you have objects that have base methods and properties in common, but then each have some subset of a larger set of additional methods and properties. Rather than building subclasses for each one of those possible combinations, you can use decorators to add the needed methods or functionality.
-    * *Adapter:* 
-    * *Bridge:* 
+    * *Adapter:*
+    * *Bridge:*
     * *Facade:*
-    * *Composite:* 
-    * *Proxy:* 
-    * *Private Class Data:* 
-    * *Flyweight:* 
+    * *Composite:*
+    * *Proxy:*
+    * *Private Class Data:*
+    * *Flyweight:*
   3. **Behavioral Design Patterns:** Used in communications between entities, and make that communication easier and more flexible
-    * *Asynchronous:* 
-    * *Observer:* 
+    * *Asynchronous:*
+    * *Observer:*
     * *State:* An Object's behavior changes when its internal state changes. ex. DVD remote control - when in moviePlayingState, pressing the play button pauses the movie, when in moviePausedState, pressing the play button plays the movie
-    * *Strategy:* 
+    * *Strategy:*
     * *Chain of Responsibility:* A series of receivers or objects attempt to handle and resolve a request, or else they pass it to the next object in the chain. ex. Middleware in Express is a variant, or Promises using .catch() where if one attempt fails, a new object picks it up
-    * *Command:* 
-    * *Iterator:* 
-    * *Interpreter:* 
-    * *Mediator:* 
+    * *Command:*
+    * *Iterator:*
+    * *Interpreter:*
+    * *Mediator:*
 * **Why:** These are well-thought out solutions to common programming problems, and provide a solid foundation for developing programming languages and general problem solving
 * **References:** [tutsplus](https://code.tutsplus.com/articles/a-beginners-guide-to-design-patterns--net-12752), [Source Making](https://sourcemaking.com/design_patterns)
 
@@ -1084,7 +1096,7 @@ var a = function() {
 * **Example:**
 * **Why:**
 * **References:** []()
- 
+
 ## Git Questions
 > * Practically speaking, how does git rebase function compared to git merge?
 * **Definition:**
@@ -1092,7 +1104,7 @@ var a = function() {
 * **Why:**
 * **References:** []()
 
-> * When using git, what exactly do people mean when they talk about "the SHA-1"? 
+> * When using git, what exactly do people mean when they talk about "the SHA-1"?
 * **Definition:**
 * **Example:**
 * **Why:**
