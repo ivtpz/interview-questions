@@ -861,7 +861,7 @@ var a = function() {
 > Do your best to describe the process from the time you type in a website's URL to it finishing loading on your screen.
 
 * **Definition:** 
-  * Super simplified version: 
+  Super simplified version: 
   1. Browser checks the cache, if it finds the requested object and it's fresh, skip to #9
   2. Broswer asks OS for server's IP address
   3. OS makes a DNS lookup and gives the IP address to the browser
