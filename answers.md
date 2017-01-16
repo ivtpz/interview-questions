@@ -859,10 +859,21 @@ var a = function() {
 ## Back End Questions
 
 > Do your best to describe the process from the time you type in a website's URL to it finishing loading on your screen.
-* **Definition:**
-* **Example:**
-* **Why:**
-* **References:** []()
+
+* **Definition:** 
+  * Super simplified version: 
+  1. Browser checks the cache, if it finds the requested object and it's fresh, skip to #9
+  2. Broswer asks OS for server's IP address
+  3. OS makes a DNS lookup and gives the IP address to the browser
+  4. Browsesr opens a TCP connection to the server (more complex for HTTPS)
+  5. Browser sends the HTTP request through the TCP connection
+  6. Browser recieves the HTTP response, and either closes the connection or reuses it for another request
+  7. Browser checks status code (3xx, 4xx, 5xx or 2xx)
+  8. If possible, browser caches response
+  9. Browser decodes response
+  10. Browser determines what to do with the response (Is it HTML, image, audio?)
+  11. Browser renders response
+* **References:** [Stack Overflow](http://stackoverflow.com/questions/2092527/what-happens-when-you-type-in-a-url-in-browser)
 
 > What are the differences between Long-Polling Websockets and Server-Sent Events?
 * **Definition:**
