@@ -134,9 +134,20 @@
 * What tools would you use to find a performance bug in your code?
 * Present a quick overview of TDD.
 
-## Back End Questions
+## Web Knowledge Questions
 
 * Do your best to describe the process from the time you type in a website's URL to it finishing loading on your screen.
+* What is SSL? What is TLS?
+* What security issues go along with having an input form? How would you handle those? Can you think of anyother parts of your site that are security issues?
+* What is the difference between a socket and a port?
+* What is the "same-origin policy"?
+* What is the difference between encryption and hashing?
+* What are rainbow tables? How are they used?
+* What are salts? Why are they useful?
+* What is the difference between encoding, obfuscation, minification, and comression?
+
+## Back End Questions
+
 * What are the differences between Long-Polling Websockets and Server-Sent Events?
 * What are HTTP methods? List all HTTP methods that you know and explain them.
 * Describe server response code 200.

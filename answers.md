@@ -856,7 +856,7 @@ var a = function() {
 * **References:** []()
 
 
-## Back End Questions
+## Web Knowledge Questions
 
 > Do your best to describe the process from the time you type in a website's URL to it finishing loading on your screen.
 
@@ -874,6 +874,50 @@ var a = function() {
   10. Browser determines what to do with the response (Is it HTML, image, audio?)
   11. Browser renders response
 * **References:** [Stack Overflow](http://stackoverflow.com/questions/2092527/what-happens-when-you-type-in-a-url-in-browser)
+
+> What is SSL? What is TLS?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+> What security issues go along with having an input form? How would you handle those? Can you think of anyother parts of your site that are security issues?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+> What is the difference between a socket and a port?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+> What is the "same-origin policy"?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+> What is the difference between encryption and hashing?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+> What are rainbow tables? How are they used?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+> What are salts? Why are they useful?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+> What is the difference between encoding, obfuscation, minification, and comression?
+* **Definition:**
+* **Example:**
+* **Why:**
+* **References:** []()
+
+
+## Back End Questions
 
 > What are the differences between Long-Polling Websockets and Server-Sent Events?
 * **Definition:**
