@@ -873,7 +873,7 @@ var a = function() {
   9. Browser decodes response
   10. Browser determines what to do with the response (Is it HTML, image, audio?)
   11. Browser renders response
-* **References:** [Stack Overflow](http://stackoverflow.com/questions/2092527/what-happens-when-you-type-in-a-url-in-browser)
+* **References:** [Stack Overflow](http://stackoverflow.com/questions/2092527/what-happens-when-you-type-in-a-url-in-browser) [More indepth answer](https://plus.google.com/+JeanBaptisteQueru/posts/dfydM2Cnepe)
 
 > What is SSL? What is TLS?
 * **Definition:**
