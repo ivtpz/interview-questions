@@ -47,6 +47,7 @@
 * Is JavaScript a functional language? What does it mean for a language to be "functional"?
 * What's an IIFE in JS? When would you use it? 
 * What is JSONP
+* How do you declare constants and enums in JavaScript?
 
 ## Opinion based
 * Why would you use JS?
