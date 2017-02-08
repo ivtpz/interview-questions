@@ -346,6 +346,25 @@ var a = function() {
 * **Why:**
 * **References:** []()
 
+> How do you declare constants and enums in JavaScript?
+
+* **Definition:** A constant is basically a variable that can't change. An enum is a feature of strongly typed languages (such as C) which includes a list of possible values for variables of that type. JavaScript neither has constant nor enum datatypes implemented but for variables that are written in ALL_CAPS, it's generally a convention to treat them as if they were constant - so don't modify them. You can define primitive values as constants with ES6 `const` but that doesn't make objects truly immutable, simply not reassignable. You can also use `Object.freeze(obj)` to shallowly 'freeze' an object and make it so that no properties can be removed, added, or changed (immutable).
+* **Example:**
+```javascript
+//Using ES6 const
+const DAY = {};
+DAY.afternoon = true; //Allowed
+DAY = 'Monday'; //Uncaught TypeError: Assignment to constant variable.
+
+//Using Object.freeze to *shallowly* freeze an object
+Object.freeze(DAY); //Note: Don't need to save it to a variable
+DAY.evening = false; //Silently will do nothing. In strict mode, will throw a TypeError
+Object.isFrozen(DAY); //true
+console.log(DAY); //{afternoon: true}
+```
+* **Why:** Constants provide some measure of...well, constancy. It gets rid of the possibility of accidentally changing/re-declaring a variable as errors will be thrown. Beyond that advantage, there can also be an increase in performance as when some JS engines compile the JS code, they'll see the `const` keyword and allow for optimizations such as dead code removal to increase runtime efficiency.
+* **References:** [TheFreeDictionary](http://encyclopedia2.thefreedictionary.com/Enum+(Computer+Science)), [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze), [Marius Schulz](https://blog.mariusschulz.com/2015/12/31/constant-variables-in-javascript-or-when-const-isnt-constant), [StackOverflow](http://stackoverflow.com/questions/21237105/const-in-javascript-when-to-use-it-and-is-it-necessary), [Wikipedia](https://en.wikipedia.org/wiki/Dead_code_elimination)
+
 
 ## Opinion based
 
