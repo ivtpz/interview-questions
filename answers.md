@@ -93,9 +93,35 @@ person.talk();
 * **References:** [Mozilla](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/this), [JS is Sexy](http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/)
 
 > Explain how prototypal inheritance works
-* **Definition:**
+
+* **Definition:** Prototypal inheritance means that failed property lookups on an object will delegate up that objects prototypal chain, until it reaches Object.prototype, which then delegates to `null`. All objects delegate to the Object prototype. Anytime you use `Object.create("specified prototype")` or add methods onto a constructor's prototype, and then set up sub-classes, this creates a prototype chain. ES6 classes, and the extend keyword for sub-classes also sets up prototypal inheritance chains.
 * **Example:**
-* **Why:**
+```javascript
+var Car = function(color, doors, seats) {
+
+  this.color = color;
+  this.doors = doors;
+  this.seats = seats;
+  this.wheels = 4;
+};
+Car.prototype.startEngine = function() {
+  console.log('Vrooomm vrooomm');
+};
+
+var Convertible = function(color, doors, seats) {
+  Car.call(this, color, doors, seats);
+  this.topUp = true;
+}
+Convertible.prototype = Object.create(Car.prototype);
+Convertible.prototype.constructor = Convertible;
+Convertible.prototype.lowerTop = function() {
+  this.topUp = false;
+}
+
+```
+
+This creates a prototype chain where Convertible delegates to Car, which delegates to Object.
+* **Why:** Using prototypal inheritance can save memory, since you don't have to make copies of functions, you can just delegate lookups. It also makes it easy to overwrite a method from a class within one of it's sub classes.
 * **References:** []()
 
 > What do you think of AMD vs CommonJS?
