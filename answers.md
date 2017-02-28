@@ -122,7 +122,7 @@ Convertible.prototype.lowerTop = function() {
 
 This creates a prototype chain where Convertible delegates to Car, which delegates to Object.
 * **Why:** Using prototypal inheritance can save memory, since you don't have to make copies of functions, you can just delegate lookups. It also makes it easy to overwrite a method from a class within one of it's sub classes.
-* **References:** []()
+* **References:** [MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
 
 > What do you think of AMD vs CommonJS?
 * **Definition:**
@@ -905,8 +905,8 @@ console.log(DAY); //{afternoon: true}
 
 > Do your best to describe the process from the time you type in a website's URL to it finishing loading on your screen.
 
-* **Definition:** 
-  Super simplified version: 
+* **Definition:**
+  Super simplified version:
   1. Browser checks the cache, if it finds the requested object and it's fresh, skip to #9
   2. Broswer asks OS for server's IP address
   3. OS makes a DNS lookup and gives the IP address to the browser
